@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SentiMind — Sentiment-Aware NLP Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Background canvas for particle effect -->
+  <canvas id="bg-canvas"></canvas>
+
+  <div class="app-shell">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-icon">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M10 16 Q16 8 22 16 Q16 24 10 16Z" fill="currentColor" opacity="0.6"/>
+            <circle cx="16" cy="16" r="3" fill="currentColor"/>
+          </svg>
+        </div>
+        <span class="brand-name">SentiMind</span>
+      </div>
+
+      <div class="sidebar-section">
+        <p class="sidebar-label">Sentiment Engine</p>
+        <div class="sentiment-gauge" id="sentiment-gauge">
+          <div class="gauge-track">
+            <div class="gauge-fill" id="gauge-fill"></div>
+          </div>
+          <div class="gauge-labels">
+            <span>Negative</span>
+            <span>Neutral</span>
+            <span>Positive</span>
+          </div>
+        </div>
+        <div class="sentiment-badge" id="sentiment-badge">
+          <span class="badge-dot" id="badge-dot"></span>
+          <span id="badge-label">Awaiting input...</span>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <p class="sidebar-label">Session Stats</p>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-value" id="stat-messages">0</span>
+            <span class="stat-key">Messages</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value" id="stat-sentiment">—</span>
+            <span class="stat-key">Avg Tone</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value" id="stat-positive">0</span>
+            <span class="stat-key">Positive</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value" id="stat-negative">0</span>
+            <span class="stat-key">Negative</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <p class="sidebar-label">About</p>
+        <p class="sidebar-about">
+          SentiMind analyses the emotional tone of your messages using a lexicon-based NLP engine and adapts its responses accordingly — demonstrating applied sentiment intelligence.
+        </p>
+        <p class="sidebar-research">
+          <a href="https://orcid.org/0009-0002-0530-8082" target="_blank">Research: ORCID 0009-0002-0530-8082</a>
+        </p>
+      </div>
+
+      <button class="clear-btn" id="clear-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/></svg>
+        Clear conversation
+      </button>
+    </aside>
+
+    <!-- MAIN CHAT AREA -->
+    <main class="chat-main">
+
+      <header class="chat-header">
+        <div class="header-left">
+          <button class="sidebar-toggle" id="sidebar-toggle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+          <div class="header-title">
+            <h1>SentiMind</h1>
+            <span class="header-subtitle">Sentiment-Aware NLP Assistant</span>
+          </div>
+        </div>
+        <div class="header-status">
+          <span class="status-dot"></span>
+          <span>Online</span>
+        </div>
+      </header>
+
+      <div class="chat-messages" id="chat-messages">
+        <!-- Welcome message injected by JS -->
+      </div>
+
+      <!-- Typing indicator -->
+      <div class="typing-indicator" id="typing-indicator">
+        <div class="typing-bubble">
+          <span></span><span></span><span></span>
+        </div>
+        <span class="typing-text">SentiMind is thinking...</span>
+      </div>
+
+      <div class="chat-input-area">
+        <div class="sentiment-preview" id="sentiment-preview">
+          <span id="preview-label">Type a message to analyse sentiment</span>
+        </div>
+        <div class="input-row">
+          <textarea
+            id="user-input"
+            placeholder="Type your message here..."
+            rows="1"
+            maxlength="500"
+          ></textarea>
+          <button class="send-btn" id="send-btn" disabled>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="22" y1="2" x2="11" y2="13"/>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+          </button>
+        </div>
+        <p class="input-hint">Built on lexicon-based NLP sentiment analysis · <a href="https://github.com/JulietChinenyeDuru/chatbot" target="_blank">View on GitHub</a></p>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="sentiment.js"></script>
+  <script src="chatbot.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
