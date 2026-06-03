@@ -18,7 +18,7 @@ The project bridges two areas of the author's work: **NLP/sentiment analysis res
 
 ## Live Demo
 
-🔗 **[Try SentiMind](https://github.com/JulietChinenyeDuru/chatbot)** — open `index.html` in any browser, no installation needed.
+🔗 **[Try SentiMind](https://github.com/JulietChinenyeDuru/chatbot)** open `index.html` in any browser, no installation needed.
 
 ---
 
@@ -151,7 +151,7 @@ Tier 3 (PhD research):  KG-SentIF — Knowledge Graph-Enhanced Sentiment Intelli
                         · Confidence calibration
 ```
 
-SentiMind demonstrates that NLP sentiment research is not purely theoretical — it produces working, deployable systems that adapt to human emotional context in real time.
+SentiMind demonstrates that NLP sentiment research is not purely theoretical it produces working, deployable systems that adapt to human emotional context in real time.
 
 ---
 
@@ -190,8 +190,3 @@ The codebase is structured for easy extension:
 
  · 
 
----
-
-## License
-
-MIT License — see [LICENSE](LICENSE) for details.
