@@ -5,15 +5,14 @@
 [![NLP](https://img.shields.io/badge/NLP-Sentiment%20Analysis-00d4b4)](https://github.com/JulietChinenyeDuru/chatbot)
 [![JavaScript](https://img.shields.io/badge/Language-JavaScript-yellow?logo=javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![No Dependencies](https://img.shields.io/badge/Dependencies-Zero-brightgreen)](https://github.com/JulietChinenyeDuru/chatbot)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ---
 
 ## Overview
 
-**SentiMind** is a fully browser-native, sentiment-aware chatbot that analyses the emotional tone of user messages in real time and adapts its responses accordingly. It demonstrates the practical application of **Natural Language Processing (NLP) sentiment analysis** — translating academic research directly into a deployable, interactive application.
+**SentiMind** is a fully browser-native, sentiment-aware chatbot that analyses the emotional tone of user messages in real time and adapts its responses accordingly. It demonstrates the practical application of **Natural Language Processing (NLP) sentiment analysis** translating academic research directly into a deployable, interactive application.
 
-The project bridges two areas of the author's work: **NLP/sentiment analysis research** (8 peer-reviewed publications) and **applied AI engineering** — showing that theoretical understanding of sentiment models translates into real, working systems.
+The project bridges two areas of the author's work: **NLP/sentiment analysis research** (8 peer-reviewed publications) and **applied AI engineering** showing that theoretical understanding of sentiment models translates into real, working systems.
 
 ---
 
@@ -186,11 +185,10 @@ The codebase is structured for easy extension:
 ## Author
 
 **Juliet Chinenye Duru**
-NLP Researcher · DevOps/Cloud Engineer · Agentic AI Engineer
-MSc Information Technology with Distinction, University of the West of Scotland (2024)
-8 peer-reviewed publications in NLP and AI
+ Researcher · DevOps/Cloud Engineer · Agentic AI Engineer
 
-[GitHub](https://github.com/JulietChinenyeDuru) · [ORCID: 0009-0002-0530-8082](https://orcid.org/0009-0002-0530-8082) · [AgricAI-Insight](https://agriai-insight.netlify.app/)
+
+ · 
 
 ---
 
